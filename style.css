@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Figtree:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #171616;
+    font-family: 'Figtree',sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;    
+}
+
+.form{
+    background-color: white;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border-radius: 2rem;
+    padding: 2rem 1.5rem;
+    width: 25rem;
+}
+
+.form__title{
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.form__subtitle{
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+    font-size: 16px;
+}
+.form__input{
+    width: 100%;
+    font-family: inherit;
+    outline: none;
+    border: .15rem solid #ededed;
+    font-size: 16px;
+    font-weight:500;
+    background-color: white;
+    padding: 1rem 1rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+    border-radius: .4rem;   
+}
+.form__input::placeholder{
+    font-family: inherit;
+}
+
+.form__input:valid{
+    border-color: #1ca633;
+    color: #1ca633;
+}
+.form__input:invalid{
+    border-color: #c04519;
+    color: #c04519;
+}
+
+.form__input--valid{
+    border-color: #1ca633;
+    color: #1ca633;
+}
+
+.form__input--invalid{
+    border-color: #c04519;
+    color: #c04519;
+}
+
+.form__input--password{
+    color: black;
+}
+
+.form__button{
+    margin-top: 3rem;
+    border: none;
+    background-color: #0c6cdc;
+    width: 100%;
+    font-family: inherit;
+    padding: 1rem 1rem;
+    border-radius: .4rem;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__button:hover{
+    background-color: #0c6ddcc9;
+}
+
