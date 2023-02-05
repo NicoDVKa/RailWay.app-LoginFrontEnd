@@ -5,19 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"     rel="stylesheet" />
     <title>Login Test</title>
 </head>
 <body>
     <section class="main">
         <form  id="form" class="form" action="">
             <h1 class="form__title">Create a free account!!</h1>
+
             <h2 class="form__subtitle">Username</h2>
-            <input id="inputUser" class="form__input form__input--text" type="text" placeholder="username" required> 
+            <div id="containerInputUsername" class="form__containerInput">
+                <input id="inputUser" class="form__input form__input--text" type="text" placeholder="username">
+                <div class="form__containerIcons">
+                    <span id="inputUsernameIcon" class="form__icon material-symbols-outlined">
+                    </span>  
+                </div>              
+            </div>
+            <p  id="msgInputUser" class="form__errorMsg"></p> 
+            
             <h2 class="form__subtitle">Email Address</h2>
-            <input id="inputEmail"  class="form__input form__input--email" type="email" placeholder="example@gmail.com" required>
+            <div id="containerInputEmail" class="form__containerInput">
+                <input id="inputEmail"  class="form__input form__input--email" type="email" placeholder="example@gmail.com">
+                <div class="form__containerIcons">
+                    <span id="inputEmailIcon" class="form__icon material-symbols-outlined">
+                    </span> 
+                </div>
+
+            </div>
+            <p  id="msgInputEmail" class="form__errorMsg"></p> 
+
             <h2 class="form__subtitle">Password</h2>
-            <input id="inputPassword" class="form__input form__input--password" type="password" placeholder="password" required>
-            <button id="btnSubmit"  class="form__button" type="submit">Sing Up</button>
+            <div id="containerInputPassword" class="form__containerInput">
+                <input id="inputPassword" class="form__input form__input--password" type="password" placeholder="password">
+               <div class="form__containerIcons">
+                 <span id="inputPasswordVisibility" class="form__icon material-symbols-outlined form__icon--black">
+                 </span>
+                 <span id="inputPasswordIcon" class="form__icon material-symbols-outlined">
+                 </span> 
+               </div>
+                
+            </div>
+            <p  id="msgInputPassword" class="form__errorMsg"></p> 
+            <p class="form__inputMsg">
+                The password must be contain a lower letter, an upper letter, a number and special character (.!@#$%^&*).
+            </p>
+            
+            <button id="btnSubmit"  class="form__button" type="submit">Sign Up 
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+            </button>
         </form>
     </section>
     <script type="module" src="./init.js"></script>

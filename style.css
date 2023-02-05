@@ -36,7 +36,7 @@ body{
 
 .form__title{
     margin-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 900;
     text-align: center;
@@ -46,50 +46,66 @@ body{
     margin-bottom: .75rem;
     font-size: 16px;
 }
-.form__input{
+
+.form__containerInput{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
     width: 100%;
-    font-family: inherit;
-    outline: none;
-    border: .15rem solid #ededed;
-    font-size: 16px;
-    font-weight:500;
     background-color: white;
-    padding: 1rem 1rem;
+    border-radius: .4rem;
     -webkit-border-radius: .4rem;
     -moz-border-radius: .4rem;
     -ms-border-radius: .4rem;
     -o-border-radius: .4rem;
-    border-radius: .4rem;   
-}
-.form__input::placeholder{
-    font-family: inherit;
+    border: .15rem solid #ededed;
+    overflow: hidden;
 }
 
-.form__input:valid{
-    border-color: #1ca633;
-    color: #1ca633;
-}
-.form__input:invalid{
-    border-color: #c04519;
-    color: #c04519;
+.form__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 100;
 }
 
-.form__input--valid{
-    border-color: #1ca633;
-    color: #1ca633;
-}
-
-.form__input--invalid{
-    border-color: #c04519;
-    color: #c04519;
-}
-
-.form__input--password{
+.form__icon--black{
     color: black;
 }
 
+.form__icon--button{
+    cursor: pointer;
+}
+
+.form__input{
+    width: 100%;
+    padding: 1rem 1rem;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight:500;
+    background-color: white;
+    color: inherit;
+}
+
+.form__containerInput--valid{
+    border-color: #1ca633;
+    color: #1ca633;
+}
+
+.form__containerInput--invalid{
+    border-color: #c04519;
+    color: #c04519;
+}
+
+/* .form__input::placeholder{
+    font-family: inherit;
+}
+ */
+
 .form__button{
-    margin-top: 3rem;
+    margin-top: 1rem;
     border: none;
     background-color: #0c6cdc;
     width: 100%;
@@ -100,9 +116,34 @@ body{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    place-items: center;
 }
 
 .form__button:hover{
     background-color: #0c6ddcc9;
 }
 
+.form__errorMsg{
+    margin-top: .25rem;
+    font-size: 14px;
+    color: #c04519;
+    height: 1ch;
+}
+
+.form__inputMsg{
+    font-size: 12px;
+    color: #827771;
+}
+
+.form__input--password{
+    color: black;
+}
+
+.form__containerIcons{
+    right: .5rem;
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+}
