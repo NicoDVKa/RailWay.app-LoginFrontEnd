@@ -41,7 +41,7 @@ export const getUserByEmail = async (email) =>{
 
     })
     .then( (httpResponse) => {
-            return httpResponse.json();
+        return httpResponse.json();
     }) 
     .then( body =>{
         user = body;
