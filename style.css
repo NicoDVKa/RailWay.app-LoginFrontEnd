@@ -43,7 +43,7 @@ body{
 }
 .form__subtitle{
     margin-top: 1.5rem;
-    margin-bottom: .75rem;
+    margin-bottom: .70rem;
     font-size: 16px;
 }
 
@@ -61,6 +61,7 @@ body{
     -o-border-radius: .4rem;
     border: .15rem solid #ededed;
     overflow: hidden;
+    padding: 1rem;
 }
 
 .form__icon{
@@ -79,13 +80,13 @@ body{
 
 .form__input{
     width: 100%;
-    padding: 1rem 1rem;
+    height: 100%;
     font-family: inherit;
     outline: none;
     border: none;
     font-size: 16px;
     font-weight:500;
-    background-color: white;
+    background-color: inherit;
     color: inherit;
 }
 
@@ -98,6 +99,7 @@ body{
     border-color: #c04519;
     color: #c04519;
 }
+
 
 /* .form__input::placeholder{
     font-family: inherit;
@@ -137,9 +139,9 @@ body{
     color: #827771;
 }
 
-.form__input--password{
+/* .form__input--password{
     color: black;
-}
+} */
 
 .form__containerIcons{
     right: .5rem;
@@ -147,3 +149,22 @@ body{
     display: flex;
     gap: 1rem;
 }
+
+.mal{
+    background-color: red;
+}
+
+.transition{
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus{
+  background-color:  inherit ;
+}
+
